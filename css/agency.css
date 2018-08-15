@@ -631,36 +631,15 @@ footer ul.quicklinks {
   text-transform: none;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-
-ul.social-buttons {
-  margin-bottom: 0;
+ul.facebook li a {
+  color: hsl(221, 44%, 41%);
 }
-
-ul.social-buttons li a {
-  font-size: 20px;
-  line-height: 40px;
-  display: block;
-  width: 40px;
-  height: 40px;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  transition: all 0.3s;
-  color: white;
-  border-radius: 100%;
-  outline: none;
-  background-color: #212529;
+.instagram a {
+  color: hsl(0, 0%, 3%) !important;
 }
-
-ul.social-buttons li a:active,
-ul.social-buttons li a:focus,
-ul.social-buttons li a:hover {
-  background-color: hsl(6, 78%, 57%);
-}
-
 .pt-l {
   padding-top: 8em;
 }
-
 @media (max-width: 991px) {
   .pt-l {
     padding-top: 2em;
