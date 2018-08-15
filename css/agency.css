@@ -112,7 +112,7 @@ img::-moz-selection {
   text-transform: uppercase;
   color: white;
   border: 0;
-  background-color: hsl(6, 78%, 57%);
+  background-color: hsl(335, 63%, 21%);
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -655,4 +655,17 @@ ul.social-buttons li a:active,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:hover {
   background-color: hsl(6, 78%, 57%);
+}
+
+.pt-l {
+  padding-top: 8em;
+}
+
+@media (max-width: 991px) {
+  .pt-l {
+    padding-top: 2em;
+  }
+  .pb-l {
+    padding-bottom: 2em;
+  }
 }
