@@ -269,7 +269,7 @@ ul {
   -moz-transition: all ease 0.5s;
   transition: all ease 0.5s;
   opacity: 0;
-  background: hsl(6, 78%, 57%, 0.95);
+  background: hsla(0, 0%, 46%, 0.49);
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
