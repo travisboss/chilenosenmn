@@ -117,7 +117,7 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-brand {
-  color: hsl(6, 78%, 57%);
+  color: hsl(336, 57%, 20%);
   font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
 }
 
@@ -125,7 +125,7 @@ img::-moz-selection {
 #mainNav .navbar-brand:active,
 #mainNav .navbar-brand:focus,
 #mainNav .navbar-brand:hover {
-  color: hsl(6, 78%, 57%);
+  color: hsl(27, 86%, 38%);
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
@@ -133,24 +133,22 @@ img::-moz-selection {
   font-weight: 400;
   padding: 0.75em 0;
   letter-spacing: 1px;
-  color: white;
+  color: #521629;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link.active,
 #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: #fed136;
+  color: #b3570d;
 }
 
 @media (min-width: 992px) {
   #mainNav {
-    padding-top: 25px;
-    padding-bottom: 25px;
     -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
     -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
     transition: padding-top 0.3s, padding-bottom 0.3s;
     border: none;
-    background-color: hsla(0, 0%, 0%, 0.45);
+    background-color: hsla(0, 0%, 100%, 0.7411764705882353)
   }
   #mainNav .navbar-brand {
     font-size: 1.75em;
@@ -241,7 +239,11 @@ header.masthead .intro-text .intro-heading {
 }
 
 .flyer-services {
-  width: 76%;
+  width: 96%;
+}
+
+ul {
+  list-style-type: none;
 }
 
 #portfolio .portfolio-item {
