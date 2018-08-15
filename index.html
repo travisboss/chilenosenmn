@@ -81,7 +81,7 @@
             <p>La entrada tendr&#225; un costo de &#36;3 (5 a 15 a&#241;os) y &#36;5 (16 a&#241;os y m&#225;s)&#46; Si compras
               la entrada en el parque, &#233;sta tendr&#225; un costo de &#36;5 (5 a 15 a&#241;os) y &#36;10 (mayores de
               15 a&#241;os).</p>
-            <p>Use el bot&#243;n de pago ubicado debajo del mapa&#46;</p>
+            <p>Compre su entrada usando el bot&#243;n “Add to Cart” ubicado debajo del mapa.</p>
           </div>
         </div>
       </div>
@@ -270,7 +270,7 @@
       </div>
       <div class="row">
         <div class="col-lg-12">
-          <form method="POST" action="https://formspree.io/travisboss@gmail.com" id="contactForm " name="sentMessage" novalidate="novalidate">
+          <form method="POST" action="https://formspree.io/travisboss@gmail.com" id="contactform " name="sentMessage" novalidate="novalidate">
             <div class="row">
               <div class="col-md-6">
                 <div class="form-group">
@@ -278,7 +278,7 @@
                   <p class="help-block text-danger"></p>
                 </div>
                 <div class="form-group">
-                  <input class="form-control" id="email" type="email" name="email" placeholder="Your Email *" required="required " data-validation-required-message="Please enter your email address.">
+                  <input class="form-control" id="email" type="email" name="_replyto" placeholder="Your Email *" required="required " data-validation-required-message="Please enter your email address.">
                   <p class="help-block text-danger"></p>
                 </div>
                 <div class="form-group">
@@ -298,7 +298,14 @@
                 <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit ">Send Message</button>
               </div>
             </div>
+            <input type="hidden" name="_next" value="https://chilenosenmn.org/" />
+            <input type="hidden" name="_language" value="es" />
+            <input type="text" name="_gotcha" style="display:none" />
           </form>
+          <script>
+            var contactform = document.getElementById('contactform');
+            contactform.setAttribute('action', '//formspree.io/' + 'chilenosenminnesota' + '@' + 'gmail' + '.' + 'com');
+          </script>
         </div>
       </div>
     </div>
