@@ -5,8 +5,8 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <meta name="description" content="A site built for a non-profit club">
+  <meta name="author" content="Travis Boss">
 
   <title>Chilenos En Minnesota</title>
 
@@ -21,9 +21,13 @@
   <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
   <!-- Custom styles for this template -->
-  <link href="css/agency.min.css" rel="stylesheet">
+  <link href="css/agency.css" rel="stylesheet">
 
+<<<<<<< HEAD
     <!-- Global site tag (gtag.js) - Google Analytics -->
+=======
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+>>>>>>> master
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122318639-6"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -75,36 +79,39 @@
       <div class="row">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading text-uppercase">Fiestas Patrias Minnesota 2018</h2>
-          <h3 class="section-subheading text-muted">Snail Lake Regional Park</h3>
+          <div class="h5 section-subheading text-muted text-justify">
+            <p>Como ya es tradici&#243;n, nuestra fiesta de celebraci&#243;n de Fiestas Patrias se realizar&#225; en el Snail Lake Park&#46;  Este a&#241;o tendremos stands o puestos de comidas en los cuales podr&#225;n comprar comida chilena, como ricas empanadas y otros platos tradicionales&#46; &#161;No se olviden traer dinero en efectivo&#33;</p>
+            <p>La entrada tendr&#225; un costo de &#36;3 (5 a 15 a&#241;os) y &#36;5 (16 a&#241;os y m&#225;s)&#46; Si compras la entrada en el parque, &#233;sta tendr&#225; un costo de &#36;5 (5 a 15 a&#241;os) y &#36;10 (mayores de 15 a&#241;os).</p>
+            <p>Use el bot&#243;n de pago ubicado debajo del mapa&#46;</p>
+          </div>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-12">
+        <div class="col-lg-6">
           <div class="embed-responsive embed-responsive-16by9">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2817.9506795198636!2d-93.12628258381905!3d45.06651156791088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52b329d991384c7b%3A0x6440f72533c9bcdd!2sSnail+Lake+Regional+Park!5e0!3m2!1sen!2sus!4v1530111744068"
               width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
           </div>
-          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <div style="padding-top: 5em;">
+          <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="get">
             <input type="hidden" name="cmd" value="_s-xclick">
-            <input type="hidden" name="hosted_button_id" value="6JVFGHRGWRY8Y">
+            <input type="hidden" name="hosted_button_id" value="643Q3HWTBVZ22">
             <table>
-              <tr>
-                <td><input type="hidden" name="on0" value="Pago">Pago</td>
-              </tr>
-              <tr>
-                <td><select name="os0">
-                    <option value="Adultos (16 años o más)">Adultos (16 años o más) $5.00 USD</option>
-                    <option value="Niños (5 a 15 años)">Niños (5 a 15 años) $3.00 USD</option>
-                  </select> </td>
-              </tr>
+            <tr><td><input type="hidden" name="on0" value="Pago">Pago</td></tr><tr><td><select name="os0">
+              <option value="Niños (5 a 15 años)">Ni&#241;os &#36;3.00 USD</option>
+              <option value="Adultos (16 años o más)">Adultos &#36;5.00 USD</option>
+            </select> </td></tr>
             </table>
             <input type="hidden" name="currency_code" value="USD">
-            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
             <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-          </form>
+            </form>
+            </div>
+        </div>
+        <div class="col-lg-6">
+          <img class="img-responsive flyer-services" src="img/services/flyerpartyweb.jpg">
         </div>
       </div>
-    </div>
   </section>
   <!-- Portfolio Grid -->
   <section class="bg-light" id="portfolio">
@@ -117,7 +124,7 @@
       </div>
       <div class="row">
         <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="https://drive.google.com/drive/folders/1u3yjMaeLHjqM75kHVJwUVZCZi3fliUD_"
+          <a class="portfolio-link" data-toggle="modal" href="https://www.flickr.com/photos/141871767@N05/sets/72157700219816855/"
             target="_blank">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
@@ -127,7 +134,7 @@
             <img class="img-fluid" src="img/portfolio/2018Picnicsweb.jpg" alt="chilenosenminnesota">
           </a>
           <div class="portfolio-caption">
-            <h4>Picnics</h4>
+            <h4>Picnic</h4>
             <p class="text-muted">2018</p>
           </div>
         </div>
@@ -172,8 +179,8 @@
             <img class="img-fluid" src="img/portfolio/2017FiestadeAnonuevoweb.jpg" alt="chilenosenminnesota">
           </a>
           <div class="portfolio-caption">
-            <h4>Fiesta de Año Nuevo</h4>
-            <p class="text-muted">2016</p>
+            <h4>Fiesta de A&#241;̃o Nuevo</h4>
+            <p class="text-muted">2017</p>
           </div>
         </div>
         <div class="col-md-4 col-sm-6 portfolio-item">
@@ -254,7 +261,7 @@
       <div class="row">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading text-uppercase">Contact Us</h2>
-          <h3 class="section-subheading text-muted">Reach out today.</h3>
+          <h3 class="section-subheading text-muted">Reach out today&#46;</h3>
         </div>
       </div>
       <div class="row">
@@ -297,7 +304,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <span class="copyright">Copyright &copy; Chilenos En Minnesota 2018</span>
+          <span class="copyright">Copyright &copy; Travis Boss</span>
         </div>
         <div class="col-md-6">
           <ul class="list-inline social-buttons">
