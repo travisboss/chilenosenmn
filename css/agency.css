@@ -141,14 +141,16 @@ img::-moz-selection {
 #mainNav .navbar-nav .nav-item .nav-link:hover {
   color: #b3570d;
 }
-
+.fixed-top {
+  background-color: hsl(0, 0%, 100%);
+}
 @media (min-width: 992px) {
   #mainNav {
     -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
     -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
     transition: padding-top 0.3s, padding-bottom 0.3s;
     border: none;
-    background-color: hsla(0, 0%, 100%, 0.7411764705882353)
+    background-color: hsla(0, 0%, 100%, 0);
   }
   #mainNav .navbar-brand {
     font-size: 1.75em;
@@ -162,7 +164,7 @@ img::-moz-selection {
   #mainNav.navbar-shrink {
     padding-top: 0;
     padding-bottom: 0;
-    background-color: #212529;
+    background-color: hsla(0, 0%, 100%, 0.68);
   }
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.25em;
