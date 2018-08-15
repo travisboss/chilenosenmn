@@ -112,7 +112,7 @@ img::-moz-selection {
   text-transform: uppercase;
   color: white;
   border: 0;
-  background-color: hsl(6, 78%, 57%);
+  background-color: hsl(335, 63%, 21%);
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -141,14 +141,16 @@ img::-moz-selection {
 #mainNav .navbar-nav .nav-item .nav-link:hover {
   color: #b3570d;
 }
-
+.fixed-top {
+  background-color: hsl(0, 0%, 100%);
+}
 @media (min-width: 992px) {
   #mainNav {
     -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
     -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
     transition: padding-top 0.3s, padding-bottom 0.3s;
     border: none;
-    background-color: hsla(0, 0%, 100%, 0.7411764705882353)
+    background-color: hsla(0, 0%, 100%, 0);
   }
   #mainNav .navbar-brand {
     font-size: 1.75em;
@@ -162,7 +164,7 @@ img::-moz-selection {
   #mainNav.navbar-shrink {
     padding-top: 0;
     padding-bottom: 0;
-    background-color: #212529;
+    background-color: hsla(0, 0%, 100%, 0.68);
   }
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.25em;
@@ -629,28 +631,20 @@ footer ul.quicklinks {
   text-transform: none;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-
-ul.social-buttons {
-  margin-bottom: 0;
+ul.facebook li a {
+  color: hsl(221, 44%, 41%);
 }
-
-ul.social-buttons li a {
-  font-size: 20px;
-  line-height: 40px;
-  display: block;
-  width: 40px;
-  height: 40px;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  transition: all 0.3s;
-  color: white;
-  border-radius: 100%;
-  outline: none;
-  background-color: #212529;
+.instagram a {
+  color: hsl(0, 0%, 3%) !important;
 }
-
-ul.social-buttons li a:active,
-ul.social-buttons li a:focus,
-ul.social-buttons li a:hover {
-  background-color: hsl(6, 78%, 57%);
+.pt-l {
+  padding-top: 8em;
+}
+@media (max-width: 991px) {
+  .pt-l {
+    padding-top: 2em;
+  }
+  .pb-l {
+    padding-bottom: 2em;
+  }
 }
