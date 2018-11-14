@@ -612,12 +612,6 @@ ul.facebook li a {
   padding-top: 3em;
 }
 
-@media (min-width: 991px) {
-  .mr-l {
-    margin-left: 18em;
-  }
-}
-
 @media (max-width:991px) {
   .pt-l {
       padding-top: 2em;
