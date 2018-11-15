@@ -224,13 +224,15 @@ header.masthead .intro-text .intro-heading {
   }
 }
 
+.flyer-services {
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
 .service-heading {
   margin: 15px 0;
   text-transform: none;
-}
-
-.flyer-services {
-  width: 96%;
 }
 
 #portfolio .portfolio-item {
