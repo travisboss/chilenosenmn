@@ -224,13 +224,15 @@ header.masthead .intro-text .intro-heading {
   }
 }
 
+.flyer-services {
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
 .service-heading {
   margin: 15px 0;
   text-transform: none;
-}
-
-.flyer-services {
-  width: 96%;
 }
 
 #portfolio .portfolio-item {
@@ -610,12 +612,6 @@ ul.facebook li a {
 
 .pt-m {
   padding-top: 3em;
-}
-
-@media (min-width: 991px) {
-  .mr-l {
-    margin-left: 16em;
-  }
 }
 
 @media (max-width:991px) {
