@@ -630,3 +630,8 @@ ul.facebook li a {
       font-size: 1.95rem
   }
 }
+@media (max-width:580px) {
+  .flyer-services {
+    width: 100%
+  }
+}
