@@ -218,7 +218,9 @@ header.masthead .intro-text .intro-heading {
 .flyer-services {
   display: block;
   margin-left: auto;
-  margin-right: auto
+  margin-right: auto;
+  max-width: 100%;
+  width: 45%
 }
 
 .service-heading {
@@ -604,6 +606,12 @@ ul.facebook li a {
   }
   .pb-l {
       padding-bottom: 2em;
+  }
+}
+
+@media (max-width:414px) {
+  section {
+    padding: 36px 0
   }
 }
 
