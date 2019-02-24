@@ -1,45 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
+Vue.component('vue-header', {
+    template: `
+ <header class="masthead">
+      <div class="container">
+        <div class="intro-text">
+        </div>
+      </div>
+    </header>
+    `
+});
 
-  <head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="google-site-verification" content="HopHQSRnYWnOiO6GD2YL7R2ttrRaW-tbQDu68DtKx9w" />
-    <meta name="description" content="A site built for a non-profit">
-    <meta name="author" content="Travis Boss">
-    <meta name="copyright" content="Travis Boss" />
-    <meta name="keywords" content="chile, chilenos, chilenas, minnesota, mn, usa, non-profit, nonprofit" />
-    <meta name="robots" content="index,follow" />
-    <meta http-equiv="Cache-control" content="public, max-age=86400">
-
-    <title>Chilenos En Minnesota - A non-profit helping Chilenos in Minnesota</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom fonts for this template -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
-      type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lobster|Roboto+Mono" rel="stylesheet">
-    <!-- Custom styles for this template -->
-    <link href="../css/agency.css" rel="stylesheet">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122318639-6"></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122318639-6"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() { dataLayer.push(arguments); }
-      gtag('js', new Date());
-
-      gtag('config', 'UA-122318639-6');
-    </script>
-  </head>
-
-  <body id="page-top">
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+Vue.component('vue-navigation', {
+    template: `
+     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">Chilenos En Minnesota</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
@@ -59,36 +31,32 @@
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="../index.html">Spanish</a>
+              <a class="nav-link js-scroll-trigger" href="en/index.html">English</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+    `
+});
 
-    <!-- Header -->
-    <header class="masthead">
-      <div class="container">
-        <div class="intro-text">
-          <!-- <div class="intro-lead-in">Chilenos En Minnesota</div> -->
-        </div>
-      </div>
-    </header>
-
-    <!-- Services -->
-    <section id="party">
-      <div class="container">
-        <div class="col-lg-12 col-md-12 col-sm-12">
-            <div class="embed-responsive embed-responsive-16by9" style="height: 250px;">
-                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fchilenos.fernandez.9%2Fposts%2F425412431566273&width=500" width="500" height="325" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+Vue.component('vue-announcements', {
+    template: `
+        <section id="party">
+            <div class="container">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                   <div class="embed-responsive embed-responsive-16by9" style="height: 250px;">
+                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fchilenos.fernandez.9%2Fposts%2F425412431566273&width=500" width="500" height="325" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    `
+});
 
-    <!-- Services -->
-    </section>
-    <!-- Portfolio Grid -->
-    <section class="bg-light" id="portfolio">
+Vue.component('vue-events', {
+    template: `
+ <section class="bg-light" id="portfolio">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
@@ -104,7 +72,7 @@
                   <i class="fa fa-external-link fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="../img/portfolio/2018Picnicsweb.jpg" alt="chilenosenminnesota">
+              <img class="img-fluid" src="img/portfolio/2018Picnicsweb.jpg" alt="chilenosenminnesota">
             </a>
             <div class="portfolio-caption">
               <h4>Picnic</h4>
@@ -118,7 +86,7 @@
                   <i class="fa fa-external-link fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="../img/portfolio/2017-Aquatennial-Parade-Sister-Citiesweb.jpg" alt="chilenosenminnesota">
+              <img class="img-fluid" src="img/portfolio/2017-Aquatennial-Parade-Sister-Citiesweb.jpg" alt="chilenosenminnesota">
             </a>
             <div class="portfolio-caption">
               <h4>Aquatennial Sister Cities</h4>
@@ -132,7 +100,7 @@
                   <i class="fa fa-external-link fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="../img/portfolio/2017FiestasPatriasweb.jpg" alt="chilenosenminnesota">
+              <img class="img-fluid" src="img/portfolio/2017FiestasPatriasweb.jpg" alt="chilenosenminnesota">
             </a>
             <div class="portfolio-caption">
               <h4>Fiestas Patrias</h4>
@@ -146,7 +114,7 @@
                   <i class="fa fa-external-link fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="../img/portfolio/2017FiestadeAnonuevoweb.jpg" alt="chilenosenminnesota">
+              <img class="img-fluid" src="img/portfolio/2017FiestadeAnonuevoweb.jpg" alt="chilenosenminnesota">
             </a>
             <div class="portfolio-caption">
               <h4>Fiesta de A&#241;o Nuevo</h4>
@@ -160,7 +128,7 @@
                   <i class="fa fa-external-link fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="../img/portfolio/2016FiestasPatriasweb.jpg" alt="chilenosenminnesota">
+              <img class="img-fluid" src="img/portfolio/2016FiestasPatriasweb.jpg" alt="chilenosenminnesota">
             </a>
             <div class="portfolio-caption">
               <h4>Fiestas Patrias</h4>
@@ -174,7 +142,7 @@
                   <i class="fa fa-external-link fa-3x "></i>
                 </div>
               </div>
-              <img class="img-fluid " src="../img/portfolio/bingo2018web.jpg" alt="chilenosenminnesota ">
+              <img class="img-fluid " src="img/portfolio/bingo2018web.jpg" alt="chilenosenminnesota ">
             </a>
             <div class="portfolio-caption">
               <h4>Bingo</h4>
@@ -184,46 +152,11 @@
         </div>
       </div>
     </section>
+    `
+});
 
-    <!-- Team
-  <section class="bg-light " id="team ">
-    <div class="container ">
-      <div class="row ">
-        <div class="col-lg-12 text-center ">
-          <h2 class="section-heading text-uppercase ">Our Amazing Team</h2>
-          <h3 class="section-subheading text-muted "></h3>
-        </div>
-      </div>
-      <div class="row ">
-        <div class="col-sm-3 ">
-          <div class="team-member ">
-            <img class="mx-auto rounded-circle " src="img/team/1.jpg " alt=" ">
-            <h4>Claudia</h4>
-          </div>
-        </div>
-        <div class="col-sm-3 ">
-          <div class="team-member ">
-            <img class="mx-auto rounded-circle " src="img/team/3.jpg " alt=" ">
-            <h4>Paula</h4>
-          </div>
-        </div>
-        <div class="col-sm-3 ">
-          <div class="team-member ">
-            <img class="mx-auto rounded-circle " src="img/team/2.jpg " alt=" ">
-            <h4>Hugo</h4>
-          </div>
-        </div>
-        <div class="col-sm-3 ">
-          <div class="team-member ">
-            <img class="mx-auto rounded-circle " src="img/team/3.jpg " alt=" ">
-            <h4>Eva</h4>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
-
-    <!-- Contact -->
+Vue.component('vue-form', {
+    template: `
     <section id="contact">
       <div class="container">
         <div class="row">
@@ -234,7 +167,7 @@
         </div>
         <div class="row">
           <div class="col-lg-12">
-            <form id="contactform" method="POST" name="sentMessage" novalidate="novalidate">
+            <form  method="POST" action="https://formspree.io/chilenosenminnesota@gmail.com" name="sentMessage" novalidate="novalidate">
               <div class="row">
                 <div class="col-md-6">
                   <div class="form-group">
@@ -269,24 +202,22 @@
                 </div>
               </div>
               <input type="hidden" name="_next" value="https://chilenosenmn.org/" />
-              <input type="hidden" name="_language" value="en" />
+              <input type="hidden" name="_language" value="es" />
               <input type="text" name="_gotcha" style="display:none" />
             </form>
-            <script>
-              var contactform = document.getElementById('contactform');
-              contactform.setAttribute('action', '//formspree.io/' + 'chilenosenminnesota' + '@' + 'gmail' + '.' + 'com');
-            </script>
           </div>
         </div>
       </div>
     </section>
-    <!-- Footer -->
+    `
+});
+
+
+Vue.component('vue-footer', {
+    template: `
     <footer>
       <div class="container-fluid">
         <div class="row">
-          <!--         <div class="col-md-6">
-          <span class="copyright">Copyright &copy; Travis Boss</span>
-        </div> -->
           <div class="col-md-12">
             <ul class="list-inline facebook">
               <li class="list-inline-item">
@@ -303,20 +234,11 @@
           </div>
         </div>
       </div>
-    </footer>
-    <!-- Bootstrap core JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js "></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js "></script>
+      </footer>
+    `
+});
 
-    <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js "></script>
 
-    <!-- Contact form JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqBootstrapValidation/1.3.7/jqBootstrapValidation.min.js "></script>
-
-    <!-- Custom scripts for this template -->
-    <script src="../js/agency.min.js "></script>
-
-  </body>
-
-</html>
+new Vue({
+    el: '#root'
+});
