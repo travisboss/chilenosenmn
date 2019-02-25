@@ -187,6 +187,107 @@ Vue.component('vue-events', {
     `
 });
 
+Vue.component('vue-events-en', {
+    template: `
+ <section class="bg-light" id="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Past Events</h2>
+            <h3 class="section-subheading text-muted"></h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" href="https://flic.kr/s/aHsmqKZnQK" target="_blank">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-external-link fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="../img/portfolio/2018Picnicsweb.jpg" alt="chilenosenminnesota">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Picnic</h4>
+              <p class="text-muted">2018</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" href="https://flic.kr/s/aHsmqL4HwR" target="_blank">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-external-link fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="../img/portfolio/2017-Aquatennial-Parade-Sister-Citiesweb.jpg" alt="chilenosenminnesota">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Aquatennial Sister Cities</h4>
+              <p class="text-muted">2017</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" href="https://flic.kr/s/aHsmgVqNN3" target="_blank">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-external-link fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="../img/portfolio/2017FiestasPatriasweb.jpg" alt="chilenosenminnesota">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Fiestas Patrias</h4>
+              <p class="text-muted">2017</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" href="https://flic.kr/s/aHskD19tAF" target="_blank">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-external-link fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="../img/portfolio/2017FiestadeAnonuevoweb.jpg" alt="chilenosenminnesota">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Fiesta de A&#241;o Nuevo</h4>
+              <p class="text-muted">2017</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" href="https://flic.kr/s/aHsmqfoZhE" target="_blank">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-external-link fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="../img/portfolio/2016FiestasPatriasweb.jpg" alt="chilenosenminnesota">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Fiestas Patrias</h4>
+              <p class="text-muted">2016</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link " href="https://flic.kr/s/aHsmqfm2VG" target="_blank ">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-external-link fa-3x "></i>
+                </div>
+              </div>
+              <img class="img-fluid " src="../img/portfolio/bingo2018web.jpg" alt="chilenosenminnesota ">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Bingo</h4>
+              <p class="text-muted">2015</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    `
+});
+
 Vue.component('vue-form', {
     template: `
     <section id="contact">
