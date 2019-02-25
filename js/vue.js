@@ -40,6 +40,38 @@ Vue.component('vue-navigation', {
     `
 });
 
+Vue.component('vue-navigation-en', {
+    template: `
+     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Chilenos En Minnesota</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+          aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#party">Party</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#portfolio">Past Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="../index.html">Spanish</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    `
+});
+
+
 Vue.component('vue-announcements', {
     template: `
         <section id="party">
@@ -167,7 +199,7 @@ Vue.component('vue-form', {
         </div>
         <div class="row">
           <div class="col-lg-12">
-            <form  method="POST" action="https://formspree.io/chilenosenminnesota@gmail.com" name="sentMessage" novalidate="novalidate">
+             <form id="contactform" method="POST" name="sentMessage" novalidate="novalidate">
               <div class="row">
                 <div class="col-md-6">
                   <div class="form-group">
@@ -209,7 +241,11 @@ Vue.component('vue-form', {
         </div>
       </div>
     </section>
-    `
+    `,
+    mounted() {
+              var contactform = document.getElementById('contactform');
+              contactform.setAttribute('action', '//formspree.io/' + 'chilenosenminnesota' + '@' + 'gmail' + '.' + 'com');
+    }
 });
 
 
@@ -242,3 +278,4 @@ Vue.component('vue-footer', {
 new Vue({
     el: '#root'
 });
+
