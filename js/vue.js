@@ -77,7 +77,7 @@ Vue.component('vue-announcements', {
         <section id="party">
             <div class="container">
                 <div class="col-lg-12 col-md-12 col-sm-12">
-                   <div class="embed-responsive embed-responsive-16by9" style="height: 250px;">
+                   <div class="embed-responsive embed-responsive-16by9" style="height: 400px;">
                         <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fchilenos.fernandez.9%2Fposts%2F425412431566273&width=500" width="500" height="325" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
                     </div>
                 </div>
