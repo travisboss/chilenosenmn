@@ -31,6 +31,7 @@ Temporary Items
 .apdisk
 
 # End of https://www.gitignore.io/api/osx
+<<<<<<< HEAD
 
 # Created by https://www.gitignore.io/api/visualstudiocode
 # Edit at https://www.gitignore.io/?templates=visualstudiocode
@@ -47,3 +48,5 @@ Temporary Items
 .history
 
 # End of https://www.gitignore.io/api/visualstudiocode
+=======
+>>>>>>> 72143f72fbc8a1de07fb53d3e2bf9e5e6bfca4a5
