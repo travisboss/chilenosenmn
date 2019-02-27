@@ -1,5 +1,5 @@
 Vue.component('vue-header', {
-    template: `
+  template: `
  <header class="masthead">
       <div class="container">
         <div class="intro-text">
@@ -10,70 +10,25 @@ Vue.component('vue-header', {
 });
 
 Vue.component('vue-navigation', {
-    template: `
-     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Chilenos En Minnesota</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-          aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-          <i class="fa fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
+  props: ['title', 'url'],
+  template: `
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#party">Party</a>
+              <a class="nav-link js-scroll-trigger" :href="url">{{ title }}</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">Past Events</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="en/index.html">English</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
     `
 });
 
 Vue.component('vue-navigation-en', {
-    template: `
-     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Chilenos En Minnesota</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-          aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-          <i class="fa fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
+  props: ['title', 'url'],
+  template: `
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#party">Party</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">Past Events</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="../index.html">Spanish</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+              <a class="nav-link js-scroll-trigger" :href="url">{{ title }}</a>
+            </li
     `
 });
 
-
 Vue.component('vue-announcements', {
-    template: `
+  template: `
         <section id="party">
             <div class="container">
                 <div class="col-lg-12 col-md-12 col-sm-12">
@@ -87,209 +42,47 @@ Vue.component('vue-announcements', {
 });
 
 Vue.component('vue-events', {
-    template: `
- <section class="bg-light" id="portfolio">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Past Events</h2>
-            <h3 class="section-subheading text-muted"></h3>
-          </div>
-        </div>
-        <div class="row">
+  props: ['title', 'year', 'image', 'url'],
+  template: `
           <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" href="https://flic.kr/s/aHsmqKZnQK" target="_blank">
+            <a class="portfolio-link" :href="url" target="_blank">
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
                   <i class="fa fa-external-link fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/portfolio/2018Picnicsweb.jpg" alt="chilenosenminnesota">
+              <img class="img-fluid" :src="image" alt="chilenosenminnesota">
             </a>
             <div class="portfolio-caption">
-              <h4>Picnic</h4>
-              <p class="text-muted">2018</p>
+              <h4>{{ title }}</h4>
+              <p class="text-muted">{{ year }}</p>
             </div>
           </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" href="https://flic.kr/s/aHsmqL4HwR" target="_blank">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-external-link fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/2017-Aquatennial-Parade-Sister-Citiesweb.jpg" alt="chilenosenminnesota">
-            </a>
-            <div class="portfolio-caption">
-              <h4>Aquatennial Sister Cities</h4>
-              <p class="text-muted">2017</p>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" href="https://flic.kr/s/aHsmgVqNN3" target="_blank">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-external-link fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/2017FiestasPatriasweb.jpg" alt="chilenosenminnesota">
-            </a>
-            <div class="portfolio-caption">
-              <h4>Fiestas Patrias</h4>
-              <p class="text-muted">2017</p>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" href="https://flic.kr/s/aHskD19tAF" target="_blank">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-external-link fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/2017FiestadeAnonuevoweb.jpg" alt="chilenosenminnesota">
-            </a>
-            <div class="portfolio-caption">
-              <h4>Fiesta de A&#241;o Nuevo</h4>
-              <p class="text-muted">2017</p>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" href="https://flic.kr/s/aHsmqfoZhE" target="_blank">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-external-link fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/2016FiestasPatriasweb.jpg" alt="chilenosenminnesota">
-            </a>
-            <div class="portfolio-caption">
-              <h4>Fiestas Patrias</h4>
-              <p class="text-muted">2016</p>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link " href="https://flic.kr/s/aHsmqfm2VG" target="_blank ">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-external-link fa-3x "></i>
-                </div>
-              </div>
-              <img class="img-fluid " src="img/portfolio/bingo2018web.jpg" alt="chilenosenminnesota ">
-            </a>
-            <div class="portfolio-caption">
-              <h4>Bingo</h4>
-              <p class="text-muted">2015</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
     `
 });
 
 Vue.component('vue-events-en', {
-    template: `
- <section class="bg-light" id="portfolio">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Past Events</h2>
-            <h3 class="section-subheading text-muted"></h3>
-          </div>
-        </div>
-        <div class="row">
+  props: ['title', 'year', 'image', 'url'],
+  template: `
           <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" href="https://flic.kr/s/aHsmqKZnQK" target="_blank">
+            <a class="portfolio-link" :href="url" target="_blank">
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
                   <i class="fa fa-external-link fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="../img/portfolio/2018Picnicsweb.jpg" alt="chilenosenminnesota">
+              <img class="img-fluid" :src="image" alt="chilenosenminnesota">
             </a>
             <div class="portfolio-caption">
-              <h4>Picnic</h4>
-              <p class="text-muted">2018</p>
+              <h4>{{ title }}</h4>
+              <p class="text-muted">{{ year }}</p>
             </div>
           </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" href="https://flic.kr/s/aHsmqL4HwR" target="_blank">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-external-link fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="../img/portfolio/2017-Aquatennial-Parade-Sister-Citiesweb.jpg" alt="chilenosenminnesota">
-            </a>
-            <div class="portfolio-caption">
-              <h4>Aquatennial Sister Cities</h4>
-              <p class="text-muted">2017</p>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" href="https://flic.kr/s/aHsmgVqNN3" target="_blank">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-external-link fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="../img/portfolio/2017FiestasPatriasweb.jpg" alt="chilenosenminnesota">
-            </a>
-            <div class="portfolio-caption">
-              <h4>Fiestas Patrias</h4>
-              <p class="text-muted">2017</p>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" href="https://flic.kr/s/aHskD19tAF" target="_blank">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-external-link fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="../img/portfolio/2017FiestadeAnonuevoweb.jpg" alt="chilenosenminnesota">
-            </a>
-            <div class="portfolio-caption">
-              <h4>Fiesta de A&#241;o Nuevo</h4>
-              <p class="text-muted">2017</p>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" href="https://flic.kr/s/aHsmqfoZhE" target="_blank">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-external-link fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="../img/portfolio/2016FiestasPatriasweb.jpg" alt="chilenosenminnesota">
-            </a>
-            <div class="portfolio-caption">
-              <h4>Fiestas Patrias</h4>
-              <p class="text-muted">2016</p>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link " href="https://flic.kr/s/aHsmqfm2VG" target="_blank ">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-external-link fa-3x "></i>
-                </div>
-              </div>
-              <img class="img-fluid " src="../img/portfolio/bingo2018web.jpg" alt="chilenosenminnesota ">
-            </a>
-            <div class="portfolio-caption">
-              <h4>Bingo</h4>
-              <p class="text-muted">2015</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
     `
 });
 
 Vue.component('vue-form', {
-    template: `
+  template: `
     <section id="contact">
       <div class="container">
         <div class="row">
@@ -343,15 +136,17 @@ Vue.component('vue-form', {
       </div>
     </section>
     `,
-    mounted() {
-              var contactform = document.getElementById('contactform');
-              contactform.setAttribute('action', '//formspree.io/' + 'chilenosenminnesota' + '@' + 'gmail' + '.' + 'com');
-    }
+  mounted() {
+    var contactform = document.getElementById('contactform');
+    contactform.setAttribute(
+      'action',
+      '//formspree.io/' + 'chilenosenminnesota' + '@' + 'gmail' + '.' + 'com'
+    );
+  }
 });
 
-
 Vue.component('vue-footer', {
-    template: `
+  template: `
     <footer>
       <div class="container-fluid">
         <div class="row">
@@ -375,7 +170,6 @@ Vue.component('vue-footer', {
     `
 });
 
-
 new Vue({
-    el: '#root'
+  el: '#root',
 });
