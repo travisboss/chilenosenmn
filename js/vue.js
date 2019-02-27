@@ -379,4 +379,3 @@ Vue.component('vue-footer', {
 new Vue({
     el: '#root'
 });
-
