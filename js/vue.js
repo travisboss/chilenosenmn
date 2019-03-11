@@ -12,9 +12,7 @@ Vue.component('vue-header', {
 Vue.component('vue-navigation', {
   props: ['title', 'url'],
   template: `
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" :href="url">{{ title }}</a>
-            </li>
+              <a class="navbar-item js-scroll-trigger" :href="url">{{ title }}</a>
     `
 });
 
