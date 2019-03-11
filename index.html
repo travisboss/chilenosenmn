@@ -15,7 +15,7 @@
 		<title>
 			Chilenos En Minnesota - A non-profit helping Chilenos in Minnesota
 		</title>
-		<link href="https://cdnjs.com/libraries/bulma" rel="stylesheet" type="text/css">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css" rel="stylesheet" type="text/css">
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css"
 			rel="stylesheet" />
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
@@ -38,17 +38,16 @@
 
 	<body id="page-top">
 		<div id="root">
-			<nav class="navbar" role="navigation" aria-label="main navigation" id="mainNav">
+			<nav class="navbar" role="navigation" aria-label="main navigation" id="navbarChile">
 				<div class="container is-full">
 					<a class="navbar-brand js-scroll-trigger" href="#page-top">Chilenos En Minnesota</a>
-					<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-						data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-						aria-label="Toggle navigation">
-						Menu
-						<i class="fa fa-bars"></i>
-					</button>
-					<div class="collapse navbar-collapse" id="navbarResponsive">
-						<ul class="navbar-nav ml-auto">
+                    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarChile">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+					<div class="navbar-menu" id="navbarResponsive">
+						<ul class="navbar-end ml-auto">
 							<vue-navigation title="Events" url="#party"></vue-navigation>
 							<vue-navigation title="Past Events" url="#portfolio"></vue-navigation>
 							<vue-navigation title="Contact" url="#contact"></vue-navigation>
@@ -66,7 +65,7 @@
 						<h3 class="section-subheading text-muted"></h3>
 					</div>
 				</div>
-				<div class="row">
+				<div class="columns">
 					<vue-events title="Picnic" year="2018" image="img/portfolio/2018Picnicsweb.jpg"
 						url="https://flic.kr/s/aHsmqKZnQK"></vue-events>
 					<vue-events title="Aquatennial Sister Cities" year="2017"
@@ -74,6 +73,8 @@
 					</vue-events>
 					<vue-events title="Fiestas Patrias" year="2017" image="img/portfolio/2017FiestasPatriasweb.jpg"
 						url="https://flic.kr/s/aHsmgVqNN3"></vue-events>
+                </div>
+                <div class="columns">
 					<vue-events title="Fiesta de Año Nuevo" year="2017" image="img/portfolio/2017FiestadeAnonuevoweb.jpg"
 						url="https://flic.kr/s/aHskD19tAF"></vue-events>
 					<vue-events title="Fiestas Patrias" year="2016" image="img/portfolio/2016FiestasPatriasweb.jpg"

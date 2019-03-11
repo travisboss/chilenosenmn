@@ -21,7 +21,7 @@ Vue.component('vue-navigation', {
 Vue.component('vue-navigation-en', {
   props: ['title', 'url'],
   template: `
-            <li class="nav-item">
+            <li class="navbar-item">
               <a class="nav-link js-scroll-trigger" :href="url">{{ title }}</a>
             </li
     `
@@ -31,7 +31,7 @@ Vue.component('vue-announcements', {
   template: `
         <section id="party">
             <div class="container">
-                <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="is-12">
                    <div class="embed-responsive embed-responsive-16by9" style="height: 400px;">
                         <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fchilenos.fernandez.9%2Fposts%2F425412431566273&width=500" width="500" height="325" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
                     </div>
@@ -44,14 +44,14 @@ Vue.component('vue-announcements', {
 Vue.component('vue-events', {
   props: ['title', 'year', 'image', 'url'],
   template: `
-          <div class="col-md-4 col-sm-6 portfolio-item">
+          <div class="column is-4 portfolio-item">
             <a class="portfolio-link" :href="url" target="_blank">
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
                   <i class="fa fa-external-link fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" :src="image" alt="chilenosenminnesota">
+              <img class="image" :src="image" alt="chilenosenminnesota">
             </a>
             <div class="portfolio-caption">
               <h4>{{ title }}</h4>
@@ -83,58 +83,69 @@ Vue.component('vue-events-en', {
 
 Vue.component('vue-form', {
   template: `
-    <section id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Contact Us</h2>
-            <h3 class="section-subheading text-muted">Reach out today&#46;</h3>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-12">
-             <form id="contactform" method="POST" name="sentMessage" novalidate="novalidate">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <input class="form-control" id="name" type="text" name="name" placeholder="Your Name *" required="required"
-                      data-validation-required-message="Please enter your name. ">
-                    <p class="help-block text-danger "></p>
-                  </div>
-                  <div class="form-group">
-                    <input class="form-control" id="email" type="email" name="_replyto" placeholder="Your Email *"
-                      required="required" data-validation-required-message="Please enter your email address.">
-                    <p class="help-block text-danger"></p>
-                  </div>
-                  <div class="form-group">
-                    <input class="form-control" id="phone" type="tel" name="phone" placeholder="Your Phone *
-            "
-                      required="required" data-validation-required-message="Please enter your phone number.">
-                    <p class="help-block text-danger"></p>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <textarea class="form-control" id="message" name="message" placeholder="Your Message *" required="required"
-                      data-validation-required-message="Please enter a message."></textarea>
-                    <p class="help-block text-danger"></p>
-                  </div>
-                </div>
-                <div class="clearfix"></div>
-                <div class="col-lg-12 text-center">
-                  <div id="success"></div>
-                  <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Send
-                    Message</button>
-                </div>
+    <section class="section" id="contact">
+    <div class="column">
+      <div class="section-heading">
+        <h3 class="title is-2 has-text-white has-text-centered">Contact US</h3>
+        <h4 class="subtitle is-5 has-text-white has-text-centered">Get in touch</h4>
+      </div>
+      <br>
+
+      <div class="columns">
+        <div class="column is-6 is-offset-3">
+          <div class="box">
+            <div class="field">
+              <label class="label">Name</label>
+              <div class="control has-icons-left">
+                <input class="input" type="text" placeholder="e.g John Doe" value="">
+                <span class="icon is-small is-left">
+                  <i class="fa fa-user"></i>
+                </span>
               </div>
-              <input type="hidden" name="_next" value="https://chilenosenmn.org/" />
-              <input type="hidden" name="_language" value="es" />
-              <input type="text" name="_gotcha" style="display:none" />
-            </form>
+            </div>
+
+            <div class="field">
+              <label class="label">Email</label>
+              <div class="control has-icons-left">
+                <input class="input" type="email" placeholder="e.g johndoe@gmail.com" value="">
+                <span class="icon is-small is-left">
+                  <i class="fa fa-envelope"></i>
+                </span>
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label">Phone</label>
+              <div class="control has-icons-left">
+                <input class="input" type="phone" placeholder="e.g 5551234567" value="">
+                <span class="icon is-small is-left">
+                  <i class="fa fa-phone"></i>
+                </span>
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label">Message</label>
+              <div class="control">
+                <textarea class="textarea" placeholder="Your Message"></textarea>
+                </span>
+              </div>
+            </div>
+
+            <div class="field is-grouped has-text-centered">
+              <div class="control">
+                <button class="button is-danger is-large"><span class="icon">
+                    <i class="fa fa-envelope"></i>
+                  </span>
+                  <span>Submit</span></button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </section>
+
+    </div>
+  </section>
     `,
   mounted() {
     var contactform = document.getElementById('contactform');
