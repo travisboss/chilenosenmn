@@ -21,9 +21,7 @@ Vue.component('vue-navigation', {
 Vue.component('vue-navigation-en', {
   props: ['title', 'url'],
   template: `
-            <li class="navbar-item">
-              <a class="nav-link js-scroll-trigger" :href="url">{{ title }}</a>
-            </li
+              <a class="navbar-item js-scroll-trigger" :href="url">{{ title }}</a>
     `
 });
 
@@ -31,9 +29,10 @@ Vue.component('vue-announcements', {
   template: `
         <section id="party">
             <div class="container">
-                <div class="is-12">
-                   <div class="embed-responsive embed-responsive-16by9" style="height: 400px;">
-                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fchilenos.fernandez.9%2Fposts%2F425412431566273&width=500" width="500" height="325" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                <div class="columns is-centered">
+                    <div class="column is-half">
+                    <div class="fb-post" data-href="https://www.facebook.com/chilenos.fernandez.9/posts/425412431566273" data-show-text="true"><blockquote cite="https://developers.facebook.com/chilenos.fernandez.9/posts/425412431566273" class="fb-xfbml-parse-ignore"><p>¡AVISO para los amigos del club futboleros y para los que no, también! ⚽️🥅⚽️🥅💙
+Como una de las actividades de verano, el...</p>Posted by <a href="https://www.facebook.com/chilenos.fernandez.9">Chilenos EnMinnesota</a> on&nbsp;<a href="https://developers.facebook.com/chilenos.fernandez.9/posts/425412431566273">Sunday, February 17, 2019</a></blockquote></div>
                     </div>
                 </div>
             </div>
