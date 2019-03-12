@@ -12,14 +12,14 @@ Vue.component('vue-header', {
 Vue.component('vue-navigation', {
   props: ['title', 'url'],
   template: `
-              <a class="navbar-item has-text-danger is-size-4 js-scroll-trigger" :href="url">{{ title }}</a>
+              <a class="navbar-item has-text-danger is-size-4" :href="url">{{ title }}</a>
     `
 });
 
 Vue.component('vue-navigation-en', {
   props: ['title', 'url'],
   template: `
-              <a class="navbar-item has-text-danger is-size-4 js-scroll-trigger" :href="url">{{ title }}</a>
+              <a class="navbar-item has-text-danger is-size-4" :href="url">{{ title }}</a>
     `
 });
 
@@ -51,8 +51,8 @@ Vue.component('vue-events', {
               <img class="image" :src="image" alt="chilenosenminnesota">
             </a>
             <div class="portfolio-caption">
-              <h4>{{ title }}</h4>
-              <p class="text-muted">{{ year }}</p>
+              <h4 class="title">{{ title }}</h4>
+              <p class="subtitle">{{ year }}</p>
             </div>
           </div>
     `
@@ -61,14 +61,14 @@ Vue.component('vue-events', {
 Vue.component('vue-events-en', {
   props: ['title', 'year', 'image', 'url'],
   template: `
-          <div class="col-md-4 col-sm-6 portfolio-item">
+          <div class="column is-4 portfolio-item">
             <a class="portfolio-link" :href="url" target="_blank">
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
                   <i class="fa fa-external-link fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" :src="image" alt="chilenosenminnesota">
+              <img class="image" :src="image" alt="chilenosenminnesota">
             </a>
             <div class="portfolio-caption">
               <h4>{{ title }}</h4>
@@ -156,21 +156,18 @@ Vue.component('vue-form', {
 Vue.component('vue-footer', {
   template: `
     <footer>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-12">
-            <ul class="list-inline facebook">
-              <li class="list-inline-item">
+      <div class="columns is-centered">
+          <div class="column">
                 <a href="https://www.facebook.com/chilenos.fernandez.9">
                   <i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i>
                 </a>
-              </li>
-              <li class="list-inline-item instagram">
+              </div>
+              <div class="column">
+              <span class="instagram">
                 <a href="https://www.instagram.com/chilenosenmn/">
                   <i class="fa fa-instagram fa-3x " aria-hidden="true"></i>
                 </a>
-              </li>
-            </ul>
+              </div>
           </div>
         </div>
       </div>
