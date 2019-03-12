@@ -12,14 +12,14 @@ Vue.component('vue-header', {
 Vue.component('vue-navigation', {
   props: ['title', 'url'],
   template: `
-              <a class="navbar-item js-scroll-trigger" :href="url">{{ title }}</a>
+              <a class="navbar-item has-text-danger is-size-4 js-scroll-trigger" :href="url">{{ title }}</a>
     `
 });
 
 Vue.component('vue-navigation-en', {
   props: ['title', 'url'],
   template: `
-              <a class="navbar-item js-scroll-trigger" :href="url">{{ title }}</a>
+              <a class="navbar-item has-text-danger is-size-4 js-scroll-trigger" :href="url">{{ title }}</a>
     `
 });
 
@@ -131,7 +131,7 @@ Vue.component('vue-form', {
 
             <div class="field is-grouped has-text-centered">
               <div class="control">
-                <button class="button is-danger is-large"><span class="icon">
+                <button class="button is-danger is-rounded"><span class="icon">
                     <i class="fa fa-envelope"></i>
                   </span>
                   <span>Submit</span></button>
