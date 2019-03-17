@@ -23,7 +23,7 @@ Vue.component('vue-navigation-en', {
   template: `
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" :href="url">{{ title }}</a>
-            </li
+            </li>
     `
 });
 
