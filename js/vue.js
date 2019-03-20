@@ -63,15 +63,15 @@ Vue.component('vue-events-en', {
           <div class="column is-4 portfolio-item">
             <a class="portfolio-link" :href="url" target="_blank">
               <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
+                <div class="portfolio-hover">
                   <i class="fa fa-external-link fa-3x"></i>
                 </div>
               </div>
               <img class="image" :src="image" alt="chilenosenminnesota">
             </a>
             <div class="portfolio-caption">
-              <h4>{{ title }}</h4>
-              <p class="text-muted">{{ year }}</p>
+              <h4 class="title">{{ title }}</h4>
+              <p class="subtitle">{{ year }}</p>
             </div>
           </div>
     `
