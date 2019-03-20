@@ -38,6 +38,62 @@
         <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
 		<div id="root">
+			<nav class="navbar navbar-expand-lg navbar-dark fixed-top" role="navigation" aria-label="main navigation"
+				id="mainNav">
+				<div class="container">
+			<nav class="navbar" role="navigation" aria-label="main navigation" id="mainNav">
+				<div class="container is-full">
+			<nav class="navbar" role="navigation" aria-label="main navigation" id="mainNav">
+				<div class="container is-full">
+					<a class="navbar-brand js-scroll-trigger" href="#page-top">Chilenos En Minnesota</a>
+					<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+						data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+						aria-label="Toggle navigation">
+						Menu
+						<i class="fa fa-bars"></i>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarResponsive">
+						<ul class="navbar-nav ml-auto">
+							<vue-navigation title="Events" url="#party"></vue-navigation>
+							<vue-navigation title="Past Events" url="#portfolio"></vue-navigation>
+							<vue-navigation title="Contact" url="#contact"></vue-navigation>
+							<vue-navigation title="English" url="en/index.html"></vue-navigation>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<vue-header></vue-header>
+			<vue-announcements></vue-announcements>
+			<section class="bg-light" id="portfolio">
+				<div class="container">
+					<div class="content has-text-centered">
+						<h2 class="section-heading text-uppercase">Past Events</h2>
+						<h3 class="section-subheading text-muted"></h3>
+					</div>
+				</div>
+				<div class="row">
+					<vue-events title="Picnic" year="2018" image="img/portfolio/2018Picnicsweb.jpg"
+						url="https://flic.kr/s/aHsmqKZnQK"></vue-events>
+					<vue-events title="Aquatennial Sister Cities" year="2017"
+						image="img/portfolio/2017-Aquatennial-Parade-Sister-Citiesweb.jpg" url="https://flic.kr/s/aHsmqL4HwR">
+					</vue-events>
+					<vue-events title="Fiestas Patrias" year="2017" image="img/portfolio/2017FiestasPatriasweb.jpg"
+						url="https://flic.kr/s/aHsmgVqNN3"></vue-events>
+					<vue-events title="Fiesta de Año Nuevo" year="2017" image="img/portfolio/2017FiestadeAnonuevoweb.jpg"
+						url="https://flic.kr/s/aHskD19tAF"></vue-events>
+					<vue-events title="Fiestas Patrias" year="2016" image="img/portfolio/2016FiestasPatriasweb.jpg"
+						url="https://flic.kr/s/aHsmqfoZhE"></vue-events>
+					<vue-events title="Bingo" year="2015" image="/img/portfolio/bingo2018web.jpg"
+						url="https://flic.kr/s/aHsmqfm2VG"></vue-events>
+				</div>
+			</section>
+			<vue-form></vue-form>
+			<vue-footer></vue-footer>
+		</div>
+		<script src="https://unpkg.com/vue@2.6.7/dist/vue.min.js"></script>
+		<script src="js/vue.js"></script>
+	</body>
+
 	<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
         <div class="container">
             <div class="navbar-brand">
