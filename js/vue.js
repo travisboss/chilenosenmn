@@ -28,9 +28,8 @@ Vue.component('vue-announcements', {
         <section id="party">
             <div class="container">
                 <div class="columns is-centered">
-                    <div class="column is-half">
-                    <div class="fb-post" data-href="https://www.facebook.com/chilenos.fernandez.9/posts/425412431566273" data-show-text="true"><blockquote cite="https://developers.facebook.com/chilenos.fernandez.9/posts/425412431566273" class="fb-xfbml-parse-ignore"><p>¡AVISO para los amigos del club futboleros y para los que no, también! ⚽️🥅⚽️🥅💙
-Como una de las actividades de verano, el...</p>Posted by <a href="https://www.facebook.com/chilenos.fernandez.9">Chilenos EnMinnesota</a> on&nbsp;<a href="https://developers.facebook.com/chilenos.fernandez.9/posts/425412431566273">Sunday, February 17, 2019</a></blockquote></div>
+                    <div class="column flex is-half">
+                    <div class="fb-post" data-href="https://www.facebook.com/chilenos.fernandez.9/posts/441450133295836" data-width="750" data-show-text="true"><blockquote cite="https://developers.facebook.com/chilenos.fernandez.9/posts/441450133295836" class="fb-xfbml-parse-ignore">Posted by <a href="https://www.facebook.com/chilenos.fernandez.9">Chilenos EnMinnesota</a> on&nbsp;<a href="https://developers.facebook.com/chilenos.fernandez.9/posts/441450133295836">Tuesday, March 19, 2019</a></blockquote></div>
                     </div>
                 </div>
             </div>
@@ -87,7 +86,7 @@ Vue.component('vue-form', {
         <h4 class="subtitle is-5 has-text-white has-text-centered">Get in touch</h4>
       </div>
       <br>
-
+    <form id="contactform" method="POST" name="sentMessage" novalidate="novalidate">
       <div class="columns">
         <div class="column is-6 is-offset-3">
           <div class="box">
@@ -140,7 +139,7 @@ Vue.component('vue-form', {
           </div>
         </div>
       </div>
-
+        </div>
     </div>
   </section>
     `,
