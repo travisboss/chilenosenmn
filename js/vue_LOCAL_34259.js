@@ -19,13 +19,7 @@ Vue.component('vue-navigation', {
 Vue.component('vue-navigation-en', {
   props: ['title', 'url'],
   template: `
-<<<<<<< HEAD
               <a class="navbar-item has-text-danger is-size-4" :href="url">{{ title }}</a>
-=======
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" :href="url">{{ title }}</a>
-            </li>
->>>>>>> 53e7c2937e8fe6d136fd831f2e56f7554f99505e
     `
 });
 
