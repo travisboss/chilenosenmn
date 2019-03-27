@@ -19,14 +19,15 @@ Vue.component('vue-navigation', {
 Vue.component('vue-navigation-en', {
   props: ['title', 'url'],
   template: `
-<<<<<<< HEAD
               <a class="navbar-item has-text-danger is-size-4" :href="url">{{ title }}</a>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> b5c0d0560c4d76dab7201f25f3f39e8f19908cc3
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" :href="url">{{ title }}</a>
             </li>
->>>>>>> 53e7c2937e8fe6d136fd831f2e56f7554f99505e
     `
 =======
     `,
@@ -39,8 +40,12 @@ Vue.component('vue-announcements', {
             <div class="container">
                 <div class="columns is-centered">
                     <div class="column is-half">
+<<<<<<< HEAD
                     <div class="fb-post" data-href="https://www.facebook.com/chilenos.fernandez.9/posts/445367522904097" data-width="750" data-show-text="true"><blockquote cite="https://developers.facebook.com/chilenos.fernandez.9/posts/445367522904097" class="fb-xfbml-parse-ignore">Posted by <a href="https://www.facebook.com/chilenos.fernandez.9">Chilenos EnMinnesota</a> on&nbsp;<a href="https://developers.facebook.com/chilenos.fernandez.9/posts/445367522904097">Tuesday, March 26, 2019</a></blockquote></div>
                    </div>
+=======
+                   <div class="fb-post" data-href="https://www.facebook.com/chilenos.fernandez.9/posts/445367522904097" data-width="750" data-show-text="true"><blockquote cite="https://developers.facebook.com/chilenos.fernandez.9/posts/445367522904097" class="fb-xfbml-parse-ignore">Posted by <a href="https://www.facebook.com/chilenos.fernandez.9">Chilenos EnMinnesota</a> on&nbsp;<a href="https://developers.facebook.com/chilenos.fernandez.9/posts/445367522904097">Tuesday, March 26, 2019</a></blockquote></div>
+>>>>>>> b5c0d0560c4d76dab7201f25f3f39e8f19908cc3
                 </div>
             </div>
         </section>
