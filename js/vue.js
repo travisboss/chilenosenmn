@@ -29,7 +29,7 @@ Vue.component('vue-announcements', {
             <div class="container">
                 <div class="columns is-centered">
                     <div class="column is-half">
-                    <div class="fb-post" data-href="https://www.facebook.com/chilenos.fernandez.9/posts/445367522904097" data-width="750" data-show-text="true"><blockquote cite="https://developers.facebook.com/chilenos.fernandez.9/posts/445367522904097" class="fb-xfbml-parse-ignore">Posted by <a href="https://www.facebook.com/chilenos.fernandez.9">Chilenos EnMinnesota</a> on&nbsp;<a href="https://developers.facebook.com/chilenos.fernandez.9/posts/445367522904097">Tuesday, March 26, 2019</a></blockquote></div>
+                    <div class="fb-post" data-href="https://www.facebook.com/chilenos.fernandez.9/posts/456832218424294" data-width="750" data-show-text="true"><blockquote cite="https://developers.facebook.com/chilenos.fernandez.9/posts/456832218424294" class="fb-xfbml-parse-ignore">Posted by <a href="https://www.facebook.com/chilenos.fernandez.9">Chilenos EnMinnesota</a> on&nbsp;<a href="https://developers.facebook.com/chilenos.fernandez.9/posts/456832218424294">Monday, April 15, 2019</a></blockquote></div>
                    </div>
                 </div>
             </div>
