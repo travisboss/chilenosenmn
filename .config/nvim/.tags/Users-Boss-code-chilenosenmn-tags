@@ -4,5 +4,5 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
-gtag	/Users/Boss/code/chilenosenmn/en/index.html	/^            function gtag() { dataLayer.push(arguments); }$/;"	f
+gtag	/Users/Boss/code/chilenosenmn/en/index.html	/^            function gtag() {$/;"	f
 gtag	/Users/Boss/code/chilenosenmn/index.html	/^			function gtag() {$/;"	f
