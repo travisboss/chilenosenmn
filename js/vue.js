@@ -91,9 +91,9 @@ Vue.component('vue-form', {
         <div class="column is-6 is-offset-3">
           <div class="box">
             <div class="field">
-              <label class="label">Name</label>
+              <label class="label" name="name">Name</label>
               <div class="control has-icons-left">
-                <input class="input" type="text" placeholder="e.g John Doe" value="">
+                <input class="input" type="text" name="name" placeholder="e.g John Doe" value="">
                 <span class="icon is-small is-left">
                   <i class="fa fa-user"></i>
                 </span>
@@ -103,7 +103,7 @@ Vue.component('vue-form', {
             <div class="field">
               <label class="label">Email</label>
               <div class="control has-icons-left">
-                <input class="input" type="email" placeholder="e.g johndoe@gmail.com" value="">
+                <input class="input" type="email" name="replyto" placeholder="e.g johndoe@gmail.com" value="">
                 <span class="icon is-small is-left">
                   <i class="fa fa-envelope"></i>
                 </span>
@@ -113,7 +113,7 @@ Vue.component('vue-form', {
             <div class="field">
               <label class="label">Phone</label>
               <div class="control has-icons-left">
-                <input class="input" type="phone" placeholder="e.g 5551234567" value="">
+                <input class="input" type="phone" name="phone" placeholder="e.g 5551234567" value="">
                 <span class="icon is-small is-left">
                   <i class="fa fa-phone"></i>
                 </span>
@@ -123,7 +123,9 @@ Vue.component('vue-form', {
             <div class="field">
               <label class="label">Message</label>
               <div class="control">
-                <textarea class="textarea" placeholder="Your Message"></textarea>
+                <textarea class="textarea" name="message" placeholder="Your Message"></textarea>
+                <input type="text" name="_gotcha" style="display:none" />
+                <input type="hidden" name="_next" value="https://chilenosenmn.org/" />
                 </span>
               </div>
             </div>
