@@ -103,7 +103,7 @@ Vue.component('vue-form', {
             <div class="field">
               <label class="label">Email</label>
               <div class="control has-icons-left">
-                <input class="input" type="email" name="replyto" placeholder="e.g johndoe@gmail.com" value="">
+                <input class="input" type="email" name="_replyto" placeholder="e.g johndoe@gmail.com" value="">
                 <span class="icon is-small is-left">
                   <i class="fa fa-envelope"></i>
                 </span>
