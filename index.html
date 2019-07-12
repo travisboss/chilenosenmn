@@ -1,96 +1,163 @@
 <!DOCTYPE html>
 <html class="has-navbar-fixed-top" lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="google-site-verification"
+      content="HopHQSRnYWnOiO6GD2YL7R2ttrRaW-tbQDu68DtKx9w"
+    />
+    <meta name="description" content="A site built for a non-profit" />
+    <meta name="author" content="Travis Boss" />
+    <meta name="copyright" content="Travis Boss" />
+    <meta
+      name="keywords"
+      content="chile, chilenos, chilenas, minnesota, mn, usa, non-profit, nonprofit"
+    />
+    <meta name="robots" content="index,follow" />
+    <meta http-equiv="Cache-control" content="public, max-age=86400" />
+    <link rel="icon" href="favicon.ico" type="image/png" />
+    <title>
+      Chilenos En Minnesota - A non-profit helping Chilenos in Minnesota
+    </title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lobster|Roboto+Mono"
+      rel="stylesheet"
+    />
+    <!-- Custom styles for this template -->
+    <link href="css/agency.css" rel="stylesheet" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-122318639-6"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta name="google-site-verification" content="HopHQSRnYWnOiO6GD2YL7R2ttrRaW-tbQDu68DtKx9w" />
-		<meta name="description" content="A site built for a non-profit" />
-		<meta name="author" content="Travis Boss" />
-		<meta name="copyright" content="Travis Boss" />
-		<meta name="keywords" content="chile, chilenos, chilenas, minnesota, mn, usa, non-profit, nonprofit" />
-		<meta name="robots" content="index,follow" />
-		<meta http-equiv="Cache-control" content="public, max-age=86400" />
-		<link rel="icon" href="favicon.ico" type="image/png" />
-		<title>
-			Chilenos En Minnesota - A non-profit helping Chilenos in Minnesota
-		</title>
-		<link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css" rel="stylesheet" type="text/css">
-		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
-			type="text/css" />
-		<link href="https://fonts.googleapis.com/css?family=Lobster|Roboto+Mono" rel="stylesheet" />
-		<!-- Custom styles for this template -->
-		<link href="css/agency.css" rel="stylesheet" />
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122318639-6"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag() {
-				dataLayer.push(arguments);
-			}
-			gtag('js', new Date());
+      gtag("config", "UA-122318639-6");
+    </script>
+  </head>
 
-			gtag('config', 'UA-122318639-6');
-		</script>
-	</head>
-
-	<body id="page-top">
-        <div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
-		<div id="root">
-	<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+  <body id="page-top">
+    <div id="fb-root"></div>
+    <script
+      async
+      defer
+      crossorigin="anonymous"
+      src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"
+    ></script>
+    <div id="root">
+      <nav
+        class="navbar is-fixed-top"
+        role="navigation"
+        aria-label="main navigation"
+      >
         <div class="container">
-            <div class="navbar-brand">
-                <a class="navbar-item navbar-logo is-size-2-desktop is-size-5-tablet" href="#page-top">Chilenos En Minnesota</a>
+          <div class="navbar-brand">
+            <a
+              class="navbar-item navbar-logo is-size-2-desktop is-size-5-tablet"
+              href="#page-top"
+              >Chilenos En Minnesota</a
+            >
 
-                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarChile">
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                </a>
+            <a
+              role="button"
+              class="navbar-burger burger"
+              aria-label="menu"
+              aria-expanded="false"
+              data-target="navbarChile"
+            >
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
+          </div>
+          <div class="navbar-menu" id="navbarChile">
+            <div class="navbar-end">
+              <vue-navigation title="Events" url="#party"></vue-navigation>
+              <vue-navigation
+                title="Past Events"
+                url="#portfolio"
+              ></vue-navigation>
+              <vue-navigation title="Contact" url="#contact"></vue-navigation>
+              <vue-navigation
+                title="English"
+                url="en/index.html"
+              ></vue-navigation>
             </div>
-            <div class="navbar-menu" id="navbarChile">
-                <div class="navbar-end">
-                    <vue-navigation title="Events" url="#party"></vue-navigation>
-                    <vue-navigation title="Past Events" url="#portfolio"></vue-navigation>
-                    <vue-navigation title="Contact" url="#contact"></vue-navigation>
-                    <vue-navigation title="English" url="en/index.html"></vue-navigation>
-                </div>
-            </div>
-            </div>
-        </nav>
-                <vue-header></vue-header>
-                <vue-announcements></vue-announcements>
-    <section class="bg-light" id="portfolio">
-        <div class="container">
-            <div class="content has-text-centered">
-                <h2 class="section-heading text-uppercase">Past Events</h2>
-                <h3 class="section-subheading text-muted"></h3>
-            </div>
+          </div>
         </div>
-            <div class="columns">
-                <vue-events title="Picnic" year="2018" image="img/portfolio/2018Picnicsweb.jpg"
-                    url="https://flic.kr/s/aHsmqKZnQK"></vue-events>
-                <vue-events title="Aquatennial Sister Cities" year="2017"
-                    image="img/portfolio/2017-Aquatennial-Parade-Sister-Citiesweb.jpg" url="https://flic.kr/s/aHsmqL4HwR">
-                </vue-events>
-                <vue-events title="Fiestas Patrias" year="2017" image="img/portfolio/2017FiestasPatriasweb.jpg"
-                    url="https://flic.kr/s/aHsmgVqNN3"></vue-events>
-            </div>
-            <div class="columns">
-                <vue-events title="Fiesta de Año Nuevo" year="2017" image="img/portfolio/2017FiestadeAnonuevoweb.jpg"
-                    url="https://flic.kr/s/aHskD19tAF"></vue-events>
-                <vue-events title="Fiestas Patrias" year="2016" image="img/portfolio/2016FiestasPatriasweb.jpg"
-                    url="https://flic.kr/s/aHsmqfoZhE"></vue-events>
-                <vue-events title="Bingo" year="2015" image="/img/portfolio/bingo2018web.jpg"
-                    url="https://flic.kr/s/aHsmqfm2VG"></vue-events>
-            </div>
-        </section>
-                <vue-form></vue-form>
-                <vue-footer></vue-footer>
-		</div>
-		<script src="https://unpkg.com/vue@2.6.7/dist/vue.min.js"></script>
-		<script src="js/vue.js"></script>
-        <script src="js/navbar-burger.js"></script>
-	</body>
+      </nav>
+      <vue-header></vue-header>
+      <vue-announcements></vue-announcements>
+      <section class="bg-light" id="portfolio">
+        <div class="container">
+          <div class="content has-text-centered">
+            <h2 class="section-heading text-uppercase">Past Events</h2>
+            <h3 class="section-subheading text-muted"></h3>
+          </div>
+        </div>
+        <div class="columns">
+          <vue-events
+            title="Picnic"
+            year="2018"
+            image="img/portfolio/2018Picnicsweb.jpg"
+            url="https://flic.kr/s/aHsmqKZnQK"
+          ></vue-events>
+          <vue-events
+            title="Aquatennial Sister Cities"
+            year="2017"
+            image="img/portfolio/2017-Aquatennial-Parade-Sister-Citiesweb.jpg"
+            url="https://flic.kr/s/aHsmqL4HwR"
+          >
+          </vue-events>
+          <vue-events
+            title="Fiestas Patrias"
+            year="2017"
+            image="img/portfolio/2017FiestasPatriasweb.jpg"
+            url="https://flic.kr/s/aHsmgVqNN3"
+          ></vue-events>
+        </div>
+        <div class="columns">
+          <vue-events
+            title="Fiesta de Año Nuevo"
+            year="2017"
+            image="img/portfolio/2017FiestadeAnonuevoweb.jpg"
+            url="https://flic.kr/s/aHskD19tAF"
+          ></vue-events>
+          <vue-events
+            title="Fiestas Patrias"
+            year="2016"
+            image="img/portfolio/2016FiestasPatriasweb.jpg"
+            url="https://flic.kr/s/aHsmqfoZhE"
+          ></vue-events>
+          <vue-events
+            title="Bingo"
+            year="2015"
+            image="/img/portfolio/bingo2018web.jpg"
+            url="https://flic.kr/s/aHsmqfm2VG"
+          ></vue-events>
+        </div>
+      </section>
+      <vue-form></vue-form>
+      <vue-footer></vue-footer>
+    </div>
+    <script src="https://unpkg.com/vue@2.6.7/dist/vue.min.js"></script>
+    <script src="js/vue.js"></script>
+    <script src="js/navbar-burger.js"></script>
+  </body>
 </html>
