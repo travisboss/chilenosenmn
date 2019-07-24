@@ -6,7 +6,7 @@ body {
   -moz-transition: all 0.3s;
   -webkit-transition: all 0.3s;
   color: hsl(336, 57%, 20%);
-  font-family: "Lobster", cursive;
+  font-family: 'Lobster', cursive;
   font-size: 1.25em;
   line-height: inherit;
   padding: 12px 0;
@@ -82,7 +82,7 @@ img::-moz-selection {
     -moz-transition: all 0.3s;
     -webkit-transition: all 0.3s;
     color: hsl(336, 57%, 20%);
-    font-family: "Lobster", cursive;
+    font-family: 'Lobster', cursive;
     font-size: 2.3rem;
     line-height: inherit;
     padding: 12px 0;
@@ -100,7 +100,7 @@ header.masthead {
   -o-background-size: cover;
   -webkit-background-size: cover;
   background-attachment: scroll;
-  background-image: url("../img/header-bg.jpg");
+  background-image: url('../img/header-bg.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -197,11 +197,7 @@ header.masthead .intro-text .intro-heading {
   opacity: 1;
 }
 
-#portfolio
-  .portfolio-item
-  .portfolio-link
-  .portfolio-hover
-  .portfolio-hover-content {
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
   color: white;
   font-size: 20px;
   height: 20px;
@@ -212,27 +208,12 @@ header.masthead .intro-text .intro-heading {
   width: 100%;
 }
 
-#portfolio
-  .portfolio-item
-  .portfolio-link
-  .portfolio-hover
-  .portfolio-hover-content
-  i {
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
   margin-top: -12px;
 }
 
-#portfolio
-  .portfolio-item
-  .portfolio-link
-  .portfolio-hover
-  .portfolio-hover-content
-  h3,
-#portfolio
-  .portfolio-item
-  .portfolio-link
-  .portfolio-hover
-  .portfolio-hover-content
-  h4 {
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
   margin: 0;
 }
 
@@ -274,7 +255,7 @@ header.masthead .intro-text .intro-heading {
 .timeline:before {
   background-color: #e9ecef;
   bottom: 0;
-  content: "";
+  content: '';
   left: 40px;
   margin-left: -1.5px;
   position: absolute;
@@ -291,7 +272,7 @@ header.masthead .intro-text .intro-heading {
 .timeline > li:after,
 .timeline > li:before {
   display: table;
-  content: " ";
+  content: ' ';
 }
 
 .timeline > li:after {
@@ -488,7 +469,7 @@ header.masthead .intro-text .intro-heading {
 
 section#contact {
   background-color: #212529;
-  background-image: url("../img/map-image.png");
+  background-image: url('../img/map-image.png');
   background-position: center;
   background-repeat: no-repeat;
 }
