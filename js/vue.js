@@ -6,21 +6,21 @@ Vue.component('vue-header', {
         </div>
       </div>
     </header>
-    `,
+    `
 });
 
 Vue.component('vue-navigation', {
   props: ['title', 'url'],
   template: `
               <a class="navbar-item has-text-danger is-size-4" :href="url">{{ title }}</a>
-    `,
+    `
 });
 
 Vue.component('vue-navigation-en', {
   props: ['title', 'url'],
   template: `
               <a class="navbar-item has-text-danger is-size-4" :href="url">{{ title }}</a>
-    `,
+    `
 });
 
 Vue.component('vue-announcements', {
@@ -29,12 +29,12 @@ Vue.component('vue-announcements', {
             <div class="container">
                 <div class="columns is-centered">
                     <div class="column is-half">
-                    <div class="fb-post" data-href="https://www.facebook.com/chilenos.fernandez.9/posts/501440047296844:0" data-width="" data-show-text="true"><blockquote cite="https://developers.facebook.com/chilenos.fernandez.9/posts/501440047296844:0" class="fb-xfbml-parse-ignore"><p>Importante información!!!</p>Posted by <a href="https://www.facebook.com/chilenos.fernandez.9">Chilenos EnMinnesota</a> on&nbsp;<a href="https://developers.facebook.com/chilenos.fernandez.9/posts/501440047296844:0">Sunday, June 23, 2019</a></blockquote></div>
+                    <div class="fb-post" data-href="https://www.facebook.com/chilenos.fernandez.9/posts/520997992007716" data-width="" data-show-text="true"><blockquote cite="https://developers.facebook.com/chilenos.fernandez.9/posts/520997992007716" class="fb-xfbml-parse-ignore">Posted by <a href="https://www.facebook.com/chilenos.fernandez.9">Chilenos EnMinnesota</a> on&nbsp;<a href="https://developers.facebook.com/chilenos.fernandez.9/posts/520997992007716">Wednesday, July 24, 2019</a></blockquote></div>
                    </div>
                 </div>
             </div>
         </section>
-    `,
+    `
 });
 
 Vue.component('vue-events', {
@@ -54,7 +54,7 @@ Vue.component('vue-events', {
               <p class="subtitle">{{ year }}</p>
             </div>
           </div>
-    `,
+    `
 });
 
 Vue.component('vue-events-en', {
@@ -74,7 +74,7 @@ Vue.component('vue-events-en', {
               <p class="subtitle">{{ year }}</p>
             </div>
           </div>
-    `,
+    `
 });
 
 Vue.component('vue-form', {
@@ -149,9 +149,9 @@ Vue.component('vue-form', {
     const contactform = document.getElementById('contactform');
     contactform.setAttribute(
       'action',
-      '//formspree.io/' + 'chilenosenminnesota' + '@' + 'gmail' + '.' + 'com',
+      '//formspree.io/' + 'chilenosenminnesota' + '@' + 'gmail' + '.' + 'com'
     );
-  },
+  }
 });
 
 Vue.component('vue-footer', {
@@ -173,9 +173,9 @@ Vue.component('vue-footer', {
         </div>
       </div>
       </footer>
-    `,
+    `
 });
 
 new Vue({
-  el: '#root',
+  el: '#root'
 });
